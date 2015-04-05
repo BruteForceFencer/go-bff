@@ -4,7 +4,7 @@ package bff
 import (
 	"encoding/json"
 	"errors"
-	"github.com/BruteForceFencer/core/message-server"
+	"github.com/BruteForceFencer/core/controlserver"
 	"net"
 )
 
@@ -32,7 +32,7 @@ func (b *Bff) Hit(direction string, value interface{}) (bool, error) {
 	}
 	defer conn.Close()
 
-	message := server.Request{
+	message := controlserver.Request{
 		Direction: direction,
 		Value:     value,
 	}
