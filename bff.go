@@ -4,7 +4,7 @@ package bff
 import (
 	"encoding/json"
 	"errors"
-	"github.com/BruteForceFencer/core/controlserver"
+	"github.com/BruteForceFencer/bff/core/controlserver"
 	"net"
 )
 
